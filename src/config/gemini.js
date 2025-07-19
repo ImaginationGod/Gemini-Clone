@@ -1,5 +1,3 @@
-//  key = "AIzaSyAdFp0vd4dgXs3-ehsg3FqBOYYCmSs8cSk"
-
 import {
     GoogleGenerativeAI,
     HarmCategory,
@@ -8,8 +6,7 @@ import {
 import fs from "node:fs";
 // import mime from "mime-types";
 
-//const apiKey = process.env.GEMINI_API_KEY;
-const apiKey = "AIzaSyC9Wrem6kYdCQ_LLkhDk7RxHuNeJteWPWs";
+const apiKey = process.env.GEMINI_API_KEY;
 const genAI = new GoogleGenerativeAI(apiKey);
 
 const model = genAI.getGenerativeModel({
